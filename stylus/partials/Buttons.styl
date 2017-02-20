@@ -1,0 +1,48 @@
+/* ================================================ */
+/*                    Buttons                       */
+/* ================================================ */
+
+@import './Colors.styl'
+
+button 
+  background white
+  box-shadow none
+  border 1px solid light-grey
+  cursor pointer
+  display inline-block
+  font-size 1rem
+  height 2rem
+  text-align  center
+  width 10rem
+
+button:active
+  background light-primary-color
+  border 1px solid red
+  
+button:focus, input:focus
+  box-shadow none
+  outline none
+  
+.buttonContainer 
+  align-items center
+  display flex
+  justify-content center
+  width 10rem
+
+.btn-action 
+  background red
+  border 1px solid light-red
+  color white
+  
+.btn-secondary 
+  background transparent
+  border 1px solid red
+  color red 
+  font-weight 300
+  i 
+    border-right 1px solid red
+    color red
+
+.btn-update
+    background secondary-color
+    border 1px solid dark-secondary-color

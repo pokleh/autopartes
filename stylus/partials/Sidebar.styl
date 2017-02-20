@@ -1,0 +1,63 @@
+/* ================================================ */
+/* 						 SideBar					*/
+/* ================================================ */
+
+.menu 
+	list-style none
+	margin 0rem auto 0 auto
+	min-height 100vh - 8.189rem
+	width 100%
+
+.menu .active 
+	border-left 2px solid red
+	cursor default !important
+	font-weight 400 !important
+	.link-text
+		padding-left 10% - 1px !important
+
+.menu 
+	.menu-link 
+		border-bottom 1px solid black
+		color white
+		cursor pointer
+		font-size 1rem
+		font-weight 200
+		text-align left
+		text-decoration none
+		.link-text
+			padding-left 10%
+			padding-top 1rem
+			padding-bottom 1rem
+			i 
+				margin-right 3.5%
+	.menu-logout-link
+		color grey 
+	
+.sidebar 
+	background side-menu
+	margin-left 0
+	transition all 0.5s ease
+	
+.sidebar-logo
+	background transparent !important
+	display none !important
+	height 3rem !important
+	
+
+@media screen and (max-width 992px)
+	
+	.close-menu
+		margin-left -13.5rem
+		
+	.open-menu
+		margin-left 0rem !important
+		
+	.sidebar 
+		margin-left -13.5rem
+		position absolute
+		z-index 9999
+		
+	.sidebar-logo
+		display flex !important
+		img 
+			width 60%

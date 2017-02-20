@@ -1,0 +1,60 @@
+/* ================================================ */
+/*                      Modal                       */
+/* ================================================ */
+
+@import './Animations.styl'
+
+.modal-overlay
+	background rgba(0,0,0,0)
+	display flex
+	visibility hidden
+	height 100vh
+	position fixed
+	top 0
+	width 100%
+	z-index 9
+	&.in
+		animation fadeIn 0.75s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards
+		visibility visible
+	&.out
+		animation fadeOut 0.75s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards
+		visibility visible
+	
+.modal 
+	background white
+	display none
+	visibility hidden
+	padding 2rem
+	width 60%
+	&.in
+		animation scaleUp 0.3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards
+		display block
+		visibility visible
+	&.out
+		animation scaleDown 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards
+		visibility visible
+
+
+// Delete Alert
+
+.delete-alert 
+	h2 
+		font-size 1.25rem
+		margin-bottom 2rem
+		text-align center
+	.btn-group
+		padding 0 26.5%
+		.btn-action 
+			margin-left 1rem
+	
+@media screen and (max-width 1200px)
+	.modal 
+		width 75%
+		
+@media screen and (max-width 992px)
+	.modal 
+		width 80%
+		
+@media screen and (max-width 600px)
+	.modal 
+		width 90%

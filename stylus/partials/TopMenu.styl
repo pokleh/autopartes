@@ -1,0 +1,106 @@
+/* ================================================ */
+/* 						 Top Menu 					*/
+/* ================================================ */
+
+nav 
+	box-shadow 0px 2px 3px rgba(0,0,0,0.2)
+	height 4rem
+		
+.action-top-buttons
+	margin-left auto
+
+.add-product
+	color red
+	cursor pointer !important
+	font-size 1rem 
+	.add-product-btn
+		margin-right 0.5rem
+		padding 0 0.8rem
+		width auto
+	.add-product-icon
+		border 1px solid red
+		color red
+		display none
+		margin-right 0.2rem
+		padding 0 0.65rem
+		width auto
+	
+.btn-logout
+	margin-left auto 
+ 
+.searchbox 
+	margin-left 1.5rem
+	width 16rem
+	i 
+		color grey
+		cursor pointer
+		font-size 0.9rem 
+	
+.search-input 
+	border-left none
+	border-right none
+	border-top none
+	font-size 1rem
+	height 2rem
+	padding-left 0 
+	margin-bottom 0
+
+.search-input:focus
+	border-left none
+	border-right none
+	border-top none
+	border-bottom 1px solid light-grey
+	
+.top-menu-logo 
+	background black
+	height 100%
+	i 
+		display none
+	img 
+		width 60%
+
+.top-menu-container
+	margin 0 auto
+	width 80%
+	
+.section-title
+	font-size 1rem
+	font-weight 700
+	text-transform uppercase
+	
+/*** MEDIA QUERIES ***/
+
+@media screen and (max-width 1200px)
+	.top-menu-container
+		width 76%
+		
+@media screen and (max-width 992px)
+	.top-menu-logo 
+		width 5rem !important
+		img 
+			display none
+		i 
+			color white
+			cursor pointer
+			display block
+			font-size 1.35rem
+			
+	.top-menu-container
+		padding 0 2.9828%
+		width 100%
+		
+@media screen and (max-width 768px)
+	.add-product
+		.add-product-icon
+			display block
+		.add-product-btn
+			display none
+
+@media screen and (max-width 600px)	
+	.searchbox
+		margin-left 0.5rem
+		
+	.searchbox
+		width 10rem
+
+		

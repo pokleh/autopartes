@@ -1,0 +1,77 @@
+@import './partials/*.styl'
+
+* 
+  box-sizing border-box
+  margin 0
+  padding 0
+
+body 
+  color dark-grey
+  font-family 'Raleway', sans-serif
+  font-size 10px
+
+.App 
+  background #111 url('../img/autopartes-bg.png') no-repeat 0 100%
+  background-size 100% auto
+  height 100vh
+  text-align center
+  width 100%
+  
+.center 
+  justify-content center
+  
+.container 
+  margin 0 auto
+  width 75rem
+    
+.editable-div:focus
+  outline none
+  
+.hide 
+  display none
+
+.flex 
+  display flex
+
+.full-width 
+  width 100%
+  
+.horizontal-end 
+  justify-content flex-end
+  
+.horizontal-start 
+  justify-content flex-start
+  
+.responsive-img
+  width 100%
+
+.sidebar-width
+    width 13.5rem
+    
+.space-between
+  justify-content space-between
+
+.top-align 
+  align-items flex-start
+  
+.vertical-align 
+  align-items center
+  
+.vertical-items
+  flex-direction column
+  
+/*** Media Queries ***/
+
+@media screen and (max-width 1280px)
+  .container 
+    width 65rem
+    
+@media screen and (max-width 1200px)
+  .container 
+    width 60rem
+    
+@media screen and (max-width 992px)
+  .container 
+    padding 0 5%
+    width 100%
+    

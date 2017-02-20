@@ -1,0 +1,119 @@
+/*** Index Vies Styles ***/
+
+@import './Colors.styl'
+@import './Mixins.styl'
+
+.header-banner 
+	color white
+	margin-top 5rem
+	text-align left
+	width 65%
+	h1 
+		font-size 2rem
+		font-weight 900
+	h2 
+		font-size 1.65rem
+		font-weight 700
+	
+.logo-container
+	width 12.5rem
+	
+.login-form-container
+	width 100% - 12.5rem
+	.login-form
+		width 60%
+		input
+			height 2rem
+			flex-basis 35%
+			font-size 0.9rem
+			font-weight 300
+			margin-bottom 0
+		input:focus
+			border 1px solid grey
+		placeholder-color(grey, italic)
+		.buttonContainer
+			width 10rem
+			button 
+				font-size 0.9rem
+				
+.main-menu 
+	height 5rem
+	width 100%
+
+.store-icons-container 
+	margin-top 2rem
+	width 50%
+	.store-icon 
+		cursor pointer
+		flex-basis 47.5%
+	
+/*** Media Queries ***/
+
+@media screen and (max-width 1280px)
+	.login-form-container .login-form
+		width 70%
+	
+@media screen and (max-width 1200px)
+	.login-form-container .login-form
+		width 80%
+		
+@media screen and (max-width 992px)
+	.header-banner
+		width 90%
+		
+	.logo-container
+		width 10rem
+	.login-form-container 
+		width 100% - 10rem
+		.login-form
+			width 28rem
+			input 
+				flex-basis 9.5rem
+				font-size 0.8rem
+			.buttonContainer
+				width 8rem
+				button 
+					font-size 0.8rem
+					
+@media screen and (max-width 768px)
+	.header-banner
+		margin-top 6.5rem
+		text-align center
+		width 100%
+		
+	.logo-container
+		width 100%
+		img 
+			margin 0 auto
+			width 12rem
+	.login-form-container 
+		width 100%
+		.login-form
+			width 100%
+			input 
+				flex-basis 36%
+			.buttonContainer
+				width 25%
+				button
+					font-size 0.75rem
+					width 100%
+	.main-menu 
+		flex-direction column
+		height 4.5rem
+		justify-content space-between
+		position relative
+		top 1.5rem
+
+	.store-icons-container 
+		margin-top 3rem
+		width 100%
+		
+@media screen and (max-width 600px)
+
+	.login-form-container .login-form
+		input 
+			flex-basis 34%
+		.buttonContainer
+			width 28%
+		
+				
